@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span>
+      <li>Favorites:  <span id="favorites"></span>
+      <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <script>
+      document.body.style.fontFamily = 'Arial, sans-serif';
+      document.getElementById('nickname').innerHTML = 'Squeak!';
+      document.getElementById('favorites').innerHTML = 'Chocolate, coffee, and almond croissants.';
+      document.getElementById('hometown').innerHTML = 'Chicago';
+
+      var items = document.getElementsByTagName('li');
+      for (var i = 0; i < items.length; i++) {
+        items[i].className = 'listitem';
+        //Need to add code to change color to red
+        //document.body.style.color = 'red'; -- not this, makes everything red
+
+      }
+
+
+    </script>
+  </body>
+</html>
+
